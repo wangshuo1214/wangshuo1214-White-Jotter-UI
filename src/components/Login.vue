@@ -49,7 +49,6 @@ export default {
           password: this.loginForm.password,
         })
         .then((successResponse) => {
-          debugger;
           if (successResponse.data.code === 200) {
             this.$router.replace({ path: "/index" });
           }
