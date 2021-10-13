@@ -15,6 +15,7 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
+//在访问每一个路由前调用。
 router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth) {
     if (store.state.user.username) {
